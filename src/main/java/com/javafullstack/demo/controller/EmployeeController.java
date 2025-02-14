@@ -1,7 +1,6 @@
 package com.javafullstack.demo.controller;
 
 import com.javafullstack.demo.entity.Employee;
-import com.javafullstack.demo.service.EmployeeService;
 import com.javafullstack.demo.service.Impl.EmployeeServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/employees")
@@ -32,7 +31,7 @@ public class EmployeeController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
     @PutMapping
-    public ResponseEntity<> updateEmployee(){
+    public ResponseEntity<?> updateEmployee(){
 
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
