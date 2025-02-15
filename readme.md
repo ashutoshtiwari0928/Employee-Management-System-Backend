@@ -37,6 +37,7 @@ Employee-Management-System-Backend/
 - Java 17+
 - MySQL Server
 - Maven
+- Recommended IDE (Intellij, however any IDE of your choice would work)
 
 ### Steps to Run
 1. **Clone the Repository**
